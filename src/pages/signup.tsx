@@ -37,7 +37,7 @@ export function Signup(){
                     setStatus("loading")
 
                     try{
-                        await axios.post("https://frapay-backend.vercel.app/api/v1/user/signin",{
+                        await axios.post("https://frapay-backend.vercel.app/api/v1/user/signup",{
                         email,
                         firstname,
                         lastname,
