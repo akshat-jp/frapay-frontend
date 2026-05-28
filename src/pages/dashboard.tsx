@@ -43,6 +43,9 @@ export function Dashboard(){
                 setBalance(response.data.balance)
                 console.log("response.data.balance = " + response.data.balance)
             })
+            .catch((error) => {
+                console.log("Balance error:", error.response?.data) 
+            })
         },[])
 
     
