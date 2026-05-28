@@ -33,7 +33,7 @@ export function Signin(){
                     setStatus("loading")
 
                     try{
-                        const response = await axios.post("frapay-frontend.vercel.app/api/v1/user/signin",{
+                        const response = await axios.post("https://frapay-backend.vercel.app/api/v1/user/signin",{
                         email,
                         password
                     })
