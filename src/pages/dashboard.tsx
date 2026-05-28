@@ -19,7 +19,7 @@ export function Dashboard(){
                 return;
             }
 
-            axios.get("http://localhost:3000/api/v1/user/me",{
+            axios.get("frapay-frontend.vercel.app/api/v1/user/me",{
                 headers:{
                     Authorization : token,
                 }
@@ -34,7 +34,7 @@ export function Dashboard(){
 
         useEffect(()=>{
             const token = localStorage.getItem("token")
-            axios.get("http://localhost:3000/api/v1/accounts/balance",{
+            axios.get("frapay-frontend.vercel.app/api/v1/accounts/balance",{
                 headers:{
                     Authorization : token,
                 }
@@ -47,7 +47,7 @@ export function Dashboard(){
 
     
         useEffect(()=>{
-            axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter,{
+            axios.get("frapay-frontend.vercel.app/api/v1/user/bulk?filter=" + filter,{
                 headers:{
                     Authorization : localStorage.getItem("token")
                 }

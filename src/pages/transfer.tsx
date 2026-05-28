@@ -50,7 +50,7 @@ export function Transfer(){
                     setStatus("loading")
 
                     try {
-                        await axios.post("http://localhost:3000/api/v1/accounts/transfer",{
+                        await axios.post("frapay-frontend.vercel.app/api/v1/accounts/transfer",{
                         to : id,
                         amount : Number(money),
                     },{
